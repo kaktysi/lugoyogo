@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "416333615539",
+    "project_id": "lugoyogo",
+    "storage_bucket": "lugoyogo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416333615539:android:f7a3fb67d2752361073bc6",
+        "android_client_info": {
+          "package_name": "com.example.lugoyogo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqk2v_1qRFbgFb2fHWz16BbwkCNotnmQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
