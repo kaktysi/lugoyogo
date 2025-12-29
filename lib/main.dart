@@ -2,9 +2,14 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'firebase_options.dart';
+import 'src/core/core.dart';
+import 'src/navigation/navigation.dart';
 
 Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  AppDI.initDependencies(appLocator);
+
   runApp(const MyApp());
 }
 
@@ -13,12 +18,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const Scaffold(body: Center(child: Text('Hello, Flutter!'))),
+      routerConfig: appLocator<AppRouter>().config(),
     );
   }
 }

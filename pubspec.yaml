@@ -13,11 +13,13 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  bloc: ^9.1.0
   auto_route: ^10.2.0
   json_annotation: ^4.9.0
   dio: ^5.9.0
   firebase_core: ^4.2.1
+  flutter_bloc: ^9.1.1
+  get_it: ^9.0.5
+  firebase_auth: ^6.1.2
 
 dev_dependencies:
   flutter_test:
